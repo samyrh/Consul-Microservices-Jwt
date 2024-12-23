@@ -1,0 +1,121 @@
+/* Main container with gradient background */
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); /* Gradient background for the form */
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Central card with 3D rotation effect */
+.homepage-card {
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency for a glass effect */
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Softer, more dramatic shadow */
+    padding: 2.5rem;
+    max-width: 450px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* iOS glass effect */
+    transform-style: preserve-3d; /* Maintain 3D structure */
+    transition: transform 0.1s ease-out; /* Smooth motion */
+}
+
+/* Header text */
+.homepage-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333333;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Description text */
+.homepage-card p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Features list */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #666666;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-item span {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.1);
+    color: #333333;
+}
+
+.feature-item span:hover {
+    color: #007bff; /* Add a pop of color on hover */
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.action-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px; /* Rounder buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 191, 255, 0.3);
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe); /* Slightly adjusted gradient */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 191, 255, 0.5); /* Stronger shadow on hover */
+}
+
+.register-button {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: white;
+    box-shadow: 0 4px 20px rgba(234, 128, 252, 0.3);
+}
+
+.register-button:hover {
+    background: linear-gradient(135deg, #fbc2eb, #a18cd1); /* Slightly adjusted gradient */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(234, 128, 252, 0.5); /* Stronger shadow on hover */
+}
+
+/* Smooth transitions for hover */
+.action-button:hover {
+    transition: all 0.3s ease-in-out;
+}

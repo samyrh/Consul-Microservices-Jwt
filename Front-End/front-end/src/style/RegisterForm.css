@@ -1,0 +1,120 @@
+/* Add to RegisterForm.css */
+
+/* The container for the whole form */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f6f9;
+    transition: opacity 0.5s ease;
+}
+
+.auth-container.loading {
+    opacity: 0.6; /* Dim the background during loading */
+}
+
+/* The registration card */
+.auth-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.auth-card.fading {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Input fields */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.3);
+}
+
+/* Submit button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #3700b3;
+}
+
+/* Back to Home link */
+.back-to-home {
+    display: block;
+    margin-top: 1.5rem;
+    color: #6200ea;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #6200ea;
+    transition: width 0.2s ease;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,160 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out; /* Fade-in effect */
+}
+
+/* Modal Content */
+.modal-content {
+    background: linear-gradient(135deg, #1e2a47, #2c3e50); /* Blue gradient background */
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #ecf0f1; /* Light text for contrast */
+    position: relative;
+    animation: slideUp 0.3s ease-in-out; /* Slide-up animation */
+}
+
+/* Close Button (if needed) */
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1; /* Light text color */
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ecf0f1; /* Light text for labels */
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #7f8c8d; /* Neutral border */
+    border-radius: 8px;
+    background-color: #34495e; /* Dark background for inputs */
+    color: #ecf0f1; /* Light text inside input */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect (Neutral focus) */
+.form-group input:focus {
+    outline: none;
+    border-color: #7f8c8d; /* Neutral border color */
+    box-shadow: 0 0 8px rgba(127, 140, 141, 0.5); /* Subtle neutral glow */
+}
+
+/* Red border and background for empty inputs */
+.form-group input:empty {
+    border-color: #e74c3c; /* Red border */
+    background-color: #7f8c8d; /* Slightly darker background for empty input */
+}
+
+/* Green border for filled (valid) inputs */
+.form-group input:valid {
+    border-color: #28a745; /* Green border */
+    background-color: #34495e; /* Keep the background dark */
+}
+
+/* Buttons Styling */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.modal-buttons button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #1abc9c; /* Teal color */
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #16a085; /* Darker teal on hover */
+    transform: scale(1.05); /* Hover effect */
+}
+
+.submit-button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Cancel Button */
+.cancel-button {
+    background-color: #e74c3c; /* Dark red */
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Hover effect */
+}
+
+.cancel-button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Fade-in and Slide-up Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

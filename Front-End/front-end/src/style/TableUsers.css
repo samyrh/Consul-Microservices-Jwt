@@ -1,0 +1,270 @@
+.table-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #525252, #3d72b4); /* Gradient background */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 30px auto; /* Center the table horizontally */
+    width: 80%; /* Reduced table width */
+    overflow-x: auto; /* Scroll for smaller screens */
+}
+
+.client-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: center; /* Center text horizontally */
+    color: #f5f5f5;
+}
+
+.client-table thead tr {
+    background: rgba(61, 114, 180, 0.9); /* Header with new gradient */
+    color: #ffffff;
+}
+
+.client-table th,
+.client-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    vertical-align: middle; /* Center text vertically */
+}
+
+.client-table tbody tr {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.client-table tbody tr:hover {
+    background: rgba(61, 114, 180, 0.2); /* Subtle blue hover */
+    transform: scale(1.02);
+}
+
+.client-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Update and Delete Buttons */
+.update-button,
+.delete-button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-button {
+    background-color: #4caf50; /* Green for update */
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #ee5253; /* Red for delete */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #ff6b6b;
+    transform: scale(1.05);
+}
+
+
+/* Email Span */
+.email-span {
+    display: inline-block;
+    background-color: #3498db; /* Light blue background for email */
+    color: white;
+    padding: 8px 15px; /* Increase padding for better spacing */
+    border-radius: 20px; /* Round the edges */
+    font-size: 1.1rem; /* Larger font size */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.email-span:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    cursor: pointer;
+    transform: scale(1.05); /* Slightly enlarge the element */
+}
+
+/* Add Client Button */
+.add-client-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    background-color: #f4f4f4;
+    color: #007aff;
+    border: 1px solid #e0e0e0;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-button:hover {
+    background-color: #007aff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Add Client Form */
+.add-client-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.add-client-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.submit-button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Add Client Form */
+.add-client-form {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping of items if the screen size is small */
+    gap: 15px; /* Space between inputs */
+    margin-top: 10px;
+}
+
+.add-client-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 150px; /* Fixed width for inputs */
+}
+
+.submit-button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.search-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #3d72b4;
+    border-radius: 20px; /* Rounded edges */
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
+}
+
+.search-bar::placeholder {
+    color: #7a7a7a;
+}
+
+
+/* Table Styles */
+.client-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+.client-table th, .client-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.client-table thead {
+    background-color: #007aff;
+    color: white;
+}
+
+.client-table th,
+.client-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    vertical-align: middle; /* Center text vertically */
+}
+
+.update-button, .delete-button {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.update-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #ee5253;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #ff6b6b;
+}
+

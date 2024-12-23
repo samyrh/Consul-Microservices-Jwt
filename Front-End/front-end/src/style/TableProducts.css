@@ -1,0 +1,181 @@
+.table-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #525252, #3d72b4); /* New gradient */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 30px auto; /* Center the table horizontally */
+    width: 80%; /* Reduced table width */
+    overflow-x: auto; /* Scroll for smaller screens */
+}
+
+.produit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: center; /* Center text horizontally */
+    color: #f5f5f5;
+}
+
+.produit-table thead tr {
+    background: rgba(61, 114, 180, 0.9); /* Header with new gradient */
+    color: #ffffff;
+}
+
+.produit-table th,
+.produit-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    vertical-align: middle; /* Center text vertically */
+}
+
+.produit-table tbody tr {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.produit-table tbody tr:hover {
+    background: rgba(61, 114, 180, 0.2); /* Subtle blue hover */
+    transform: scale(1.02);
+}
+
+.produit-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.update-button,
+.delete-button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-button {
+    background: linear-gradient(135deg, #6a89cc, #4a69bd); /* Cool blue for update */
+    color: white;
+}
+
+.update-button:hover {
+    background: linear-gradient(135deg, #3c6382, #0a3d62); /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
+.delete-button {
+    background: linear-gradient(135deg, #ee5253, #b33939); /* Soft red gradient */
+    color: white;
+}
+
+.delete-button:hover {
+    background: linear-gradient(135deg, #ff6b6b, #ff4d4d); /* Bright red hover */
+    transform: scale(1.1);
+}
+
+.qte-low {
+    color: #ffffff; /* White text */
+    background-color: #ff4d4d; /* Red background for low stock */
+    padding: 5px 10px;
+    border-radius: 15px; /* Rounded corners */
+    font-weight: bold;
+}
+
+.qte-high {
+    color: #ffffff; /* White text */
+    background-color: #4caf50; /* Green background for sufficient stock */
+    padding: 5px 10px;
+    border-radius: 15px; /* Rounded corners */
+    font-weight: bold;
+}
+
+/* Action container to align Add Product button and Search Bar */
+.action-container {
+    display: flex;
+    justify-content: space-between; /* Aligns "Add Product" and "Search Bar" on opposite ends */
+    align-items: center; /* Vertically centers items */
+    margin-bottom: 20px;
+}
+
+/* Add Product button container, left-aligned */
+.add-product-container {
+    text-align: left; /* Keeps button on the left */
+}
+
+/* Search bar container, right-aligned */
+.search-container {
+    text-align: right; /* Keeps search bar on the right */
+}
+
+/* Search Bar Styles */
+.search-bar {
+    width: 150px; /* Approximately 4 cm */
+    padding: 5px;
+    border: 2px solid #3d72b4;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 0.9rem; /* Adjust font size for smaller bar */
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle focus effect */
+}
+
+/* Add Product Button Styles */
+.add-button {
+    background-color: #f4f4f4; /* Light background for iOS style */
+    color: #007aff; /* iOS blue text color */
+    border: 1px solid #e0e0e0; /* Subtle border for a modern look */
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 12px; /* Rounded corners for iOS feel */
+    font-size: 14px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-button:hover {
+    background-color: #007aff; /* Change to blue on hover */
+    color: white; /* White text on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Add Product Form Styles */
+.add-product-form {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row; /* Aligns form fields horizontally */
+    gap: 12px; /* Adds space between fields */
+    align-items: center; /* Vertically centers items */
+}
+
+
+.add-product-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 227px; /* Approx. 6 cm */
+}
+
+/* Submit Button Styles */
+.submit-button {
+    background-color: #007aff; /* iOS-style blue */
+    color: white;
+    border: none;
+    padding: 10px 18px; /* Increased padding for a bigger button */
+    cursor: pointer;
+    border-radius: 16px; /* Slightly larger rounded corners for a more polished look */
+    font-size: 14px; /* Slightly bigger font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for emphasis */
+    width: 180px; /* Increased width for a more prominent button */
+    text-align: center; /* Ensures text is centered */
+    letter-spacing: 0.5px; /* Adds a bit of space between letters for a cleaner look */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}

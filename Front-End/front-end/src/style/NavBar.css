@@ -1,0 +1,121 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background: linear-gradient(135deg, #0a1a2a, #1e3a5f); /* Dark blue gradient */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow for more contrast */
+    margin: 15px 30px;
+    color: #ffffff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for navbar */
+.navbar:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Darker shadow on hover */
+}
+
+/* Left side text (logo or title) */
+.navbar-left {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Darker shadow for text */
+    letter-spacing: 0.7px;
+}
+
+/* Right side (user icon and logout button) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* User name with dark blue background */
+.user-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e0e0e0; /* Light gray for contrast */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and name */
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: rgba(30, 58, 95, 0.8); /* Dark blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dark shadow */
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for user name */
+.user-name:hover {
+    background: rgba(47, 90, 131, 0.9); /* Slightly lighter dark blue */
+    color: #f5f5f5; /* Lighter text color */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+/* User icon with dark UI */
+.user-icon {
+    width: 24px;
+    height: 24px;
+    color: #e0e0e0; /* Light color for icon */
+}
+
+/* Logout button with blue gradient and dark theme */
+.logout-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0e2f47, #234d75); /* Dark blue gradient for the logout button */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 47, 75, 0.4); /* Dark blue shadow */
+}
+
+/* Hover effect for logout button */
+.logout-button:hover {
+    background: linear-gradient(135deg, #1a4f73, #2a6b94); /* Lighter blue gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 14px rgba(26, 79, 115, 0.6); /* Lighter blue shadow on hover */
+    color: #ffffff;
+}
+.home-button {
+    padding: 12px 24px;
+    background: linear-gradient(145deg, #1E3A8A, #1D4ED8); /* Dark blue gradient background */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px; /* Rounded corners */
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow, no white highlights */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+    margin-left: 10px; /* Space between buttons */
+    display: inline-flex; /* Aligns icon and text horizontally */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+}
+
+.home-button .icon {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+.home-button:hover {
+    background: linear-gradient(145deg, #1D4ED8, #1E3A8A); /* Inverted gradient on hover */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+.home-button:active {
+    background: linear-gradient(145deg, #1A365D, #1E40AF); /* Darker gradient on active */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Inner shadow on click */
+}
+
