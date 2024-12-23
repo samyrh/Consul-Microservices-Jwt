@@ -1,5 +1,4 @@
 
-```markdown
 # Web Application with Microservices and Consul
 
 This project implements a **microservices architecture** with **Spring Boot** for the backend and **React** for the frontend. It uses **Consul** for service discovery.
@@ -24,7 +23,7 @@ This project implements a **microservices architecture** with **Spring Boot** fo
 ```bash
 git clone https://github.com/samyrh/Consul-Microservices-Jwt.git
 cd Consul-Microservices-Jwt
-```
+
 
 ### 2. Install and Run Backend Services
 
@@ -101,7 +100,11 @@ The frontend will be available at [http://localhost:3000](http://localhost:3000)
 4. Push your branch (`git push origin feature-name`).
 5. Open a pull request.
 
-## License
+## Contact Information
 
-MIT License. See the [LICENSE](LICENSE) file for details.
+Email: Rhalimsami8@gmail.com
+LinkedIn: Sami Rhalim
+
+
+
 ```
